@@ -1,0 +1,1 @@
+*.bin  add .gitignoregit commit -m "Ignore firmware binaries"

@@ -59,14 +59,14 @@ Go to: Computer Management → Device Manager → Ports (COM & LPT)
 
 
 📷 Network Settings  
-![Network](images/controlpanel.png)
+![Network](images/contropanel.png)
 
 ---
 
 2. Open **Ethernet → Properties**
 
 📷 Ethernet Settings  
-![Ethernet](images/controlpanel2.png)
+![Ethernet](images/contropanel2.png)
 
 ---
 
@@ -77,7 +77,7 @@ Go to: Computer Management → Device Manager → Ports (COM & LPT)
 - Default Gateway: `10.10.10.3`
 
 📷 IP Configuration  
-![IP Config](images/controlpanel3.png)
+![IP Config](images/contropanel3.png)
 
 ---
 
@@ -121,7 +121,7 @@ This will enter the bootloader menu.
 4. TFTP transfer will begin  
 
 📷 TFTP Process  
-![TFTP Upload](images/upload1.png)  
+![TFTP Upload](images/upload11.png)  
 ![TFTP Upload](images/upload2.png)
 
 ---

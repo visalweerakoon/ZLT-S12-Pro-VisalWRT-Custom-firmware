@@ -1,10 +1,10 @@
-# 📦 Installation Guide (VisalWRT Firmware)
+#  Installation Guide (VisalWRT Firmware)
 
 Follow the steps below to install VisalWRT firmware on the ZLT S12 Pro router.
 
 ---
 
-## 🧰 Requirements
+##  Requirements
 
 Before starting, download and prepare the following:
 
@@ -15,7 +15,7 @@ Before starting, download and prepare the following:
 
 ---
 
-## 🔌 Step 1: Setup Serial Connection
+##  Step 1: Setup Serial Connection
 
 You need a serial connection to access the router bootloader.
 
@@ -26,7 +26,7 @@ You need a serial connection to access the router bootloader.
 3. Open **Computer Management → Device Manager**  
 4. Check the assigned COM port  
 
-📷 CP2102 Serial Adapter  
+ CP2102 Serial Adapter  
 ![CP2102](images/cp2102.jpg)
 
 ---
@@ -37,7 +37,7 @@ You need a serial connection to access the router bootloader.
 2. Use it as a USB to Serial converter  
 3. Connect TX/RX to router  
 
-📷 Arduino Serial Setup  
+ Arduino Serial Setup  
 ![Arduino](images/arduino.png)
 
 ---
@@ -48,24 +48,24 @@ Go to: Computer Management → Device Manager → Ports (COM & LPT)
 
 
 
-📷 COM Port View  
+ COM Port View  
 ![COM Port](images/comport.png)
 
 ---
 
-## 🌐 Step 2: Configure Network Settings
+##  Step 2: Configure Network Settings
 
 1. Open: Control Panel → Network and Internet → Network Connections
 
 
-📷 Network Settings  
+ Network Settings  
 ![Network](images/contropanel.png)
 
 ---
 
 2. Open **Ethernet → Properties**
 
-📷 Ethernet Settings  
+ Ethernet Settings  
 ![Ethernet](images/contropanel2.png)
 
 ---
@@ -76,12 +76,12 @@ Go to: Computer Management → Device Manager → Ports (COM & LPT)
 - Subnet Mask: `255.0.0.0`
 - Default Gateway: `10.10.10.3`
 
-📷 IP Configuration  
+ IP Configuration  
 ![IP Config](images/contropanel3.png)
 
 ---
 
-## 📡 Step 3: Setup TFTP Server
+##  Step 3: Setup TFTP Server
 
 1. Open **Tftpd64**
 2. Set working directory to firmware folder
@@ -90,7 +90,7 @@ Go to: Computer Management → Device Manager → Ports (COM & LPT)
 
 ---
 
-## 💻 Step 4: Setup PuTTY (Serial Connection)
+##  Step 4: Setup PuTTY (Serial Connection)
 
 Open PuTTY and configure:
 
@@ -98,12 +98,12 @@ Open PuTTY and configure:
 - Serial Line: `COMx` (your port)
 - Speed: `115200`
 
-📷 PuTTY Settings  
+ PuTTY Settings  
 ![PuTTY](images/putty.png)
 
 ---
 
-## 🔁 Step 5: Enter Bootloader Mode
+##  Step 5: Enter Bootloader Mode
 
 1. Connect router via serial  
 2. Power ON router  
@@ -113,28 +113,32 @@ This will enter the bootloader menu.
 
 ---
 
-## 📥 Step 6: Start TFTP Flash
+##  Step 6: Start TFTP Flash
 
 1. After pressing "1", you will see an IP prompt  
 2. Press **Enter** to accept first IP  
 3. Press **Enter again** for second IP  
 4. TFTP transfer will begin  
 
-📷 TFTP Process  
+ TFTP Process  
 ![TFTP Upload](images/upload11.png)  
 ![TFTP Upload](images/upload2.png)
 
 ---
 
-## ⚡ Step 7: Flashing Process
+##  Step 7: Flashing Process
 
 - Firmware will upload automatically  
 - Router will flash the firmware  
 - Router will reboot after completion  
 
 ---
+## Step 8: Resetup Configure Network Settings
 
-## 🔐 Step 8: Login to Router
+- Select Obtain an IP address automatically
+![Network reconfigure](images/network.png)
+
+##  Step 9: Login to Router
 
 After reboot:
 
@@ -145,12 +149,10 @@ Login details:
 - Username: `root`
 - Password: `admin`
 
-📷 Boot Process  
-![Boot](images/controlpanel4.png)
 
 ---
 
-## ⚠️ Important Notes
+## Important Notes
 
 - Do NOT power off during flashing  
 - First boot may take 2–3 minutes  
@@ -159,6 +161,7 @@ Login details:
 
 ---
 
-# ✅ Done
+#  Done
 
 Your router should now be running **VisalWRT firmware** successfully.
+

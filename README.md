@@ -165,3 +165,6 @@ Login details:
 
 Your router should now be running **VisalWRT firmware** successfully.
 
+##  WiFi Fix Guide
+
+[![WiFi Fix](https://img.shields.io/badge/WiFi%20Fix-Open%20Guide-blue?style=for-the-badge)](Wifi-fix.md)
